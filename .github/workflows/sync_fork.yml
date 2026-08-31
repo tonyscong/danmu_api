@@ -29,8 +29,6 @@ jobs:
           target_sync_branch: main
           target_branch_push_args: '--force'
           test_mode: false
-          # 💡 核心在这里：把上游的 .github 文件夹排除掉，不让它同步到你这里
-          exclude: ".github/*"
 
       - name: Check for new commits
         if: success()
